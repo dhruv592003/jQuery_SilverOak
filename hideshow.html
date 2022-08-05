@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jquery</title>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("p").hide();
+            });
+            $("p").css("color", "gray");
+            $("p").css("font-weight", "bolder");
+            $("body").css("background", "black");
+        });  
+        $(document).ready(function () {
+            $("#show").click(function () {
+                $("p").show();
+            });
+            $("p").css("color", "gray");
+            $("p").css("font-weight", "bolder");
+            $("body").css("background", "black");
+        });  
+    </script>
+</head>
+
+<body>
+    <p>
+        <b>HTML</b><br />
+        DO YOU KNOW ABOUT HTML ?<br />
+        HOW DOES WORK HTML ?<br />
+        FULL FORM OF HTML.<br />
+        HOW MANY TAGS INCLUD FOR MAKING TABLE ?<br />
+    </p>
+    <button id="hide">Hide</button>
+    <button id="show">show</button>
+</body>
+
+</html>
